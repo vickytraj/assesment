@@ -1,0 +1,113 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the card in the viewport */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Styling the card container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Profile card styles */
+.profile-card {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Profile image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #eee;
+}
+
+/* Name and designation */
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.designation {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Bio section */
+.bio {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0077b5;
+}
+
+/* Hover effect */
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .profile-card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .designation {
+        font-size: 14px;
+    }
+
+    .bio {
+        font-size: 12px;
+    }
+}
